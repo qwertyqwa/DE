@@ -1,0 +1,50 @@
+CLIENTS
+-------------------
+PK client_id
+full_name
+
+        1
+        |
+        | M
+ORDERS
+-------------------
+PK order_id
+order_date
+delivery_date
+FK pickup_id
+FK client_id
+receive_code
+status
+
+        1
+        |
+        | M
+ORDER_ITEMS
+-------------------
+PK item_id
+FK order_id
+FK article
+quantity
+
+        M
+        |
+        | 1
+PRODUCTS
+-------------------
+PK article
+product_name
+unit
+price
+supplier
+manufacturer
+category
+discount
+stock_qty
+description
+photo
+
+
+PICKUP_POINTS
+-------------------
+PK pickup_id
+address
